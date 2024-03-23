@@ -24,6 +24,7 @@ jobs:
 
       - name: Create and start virtual environment
         run: |
+          cd Shroomcast
           python -m venv venv
           source venv/bin/activate
       
@@ -74,6 +75,5 @@ jobs:
         id: deploy-to-webapp
         with:
           app-name: 'kpyapppp'
-          Package: 'Shroomcast'
           slot-name: 'Production'
           
